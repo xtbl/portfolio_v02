@@ -12,6 +12,11 @@ angular.module('portfolio', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
         url: '/projects',
         templateUrl: 'app/projects/projects.html',
         controller: 'ProjectsCtrl'
+      })
+      .state('about', {
+        url: '/about',
+        templateUrl: 'app/about/about.html',
+        controller: 'AboutCtrl'
       });
 
     $urlRouterProvider.otherwise('/');
