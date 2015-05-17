@@ -17,6 +17,11 @@ angular.module('portfolio', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 
         url: '/about',
         templateUrl: 'app/about/about.html',
         controller: 'AboutCtrl'
+      })
+      .state('experience', {
+        url: '/experience',
+        templateUrl: 'app/experience/experience.html',
+        controller: 'ExperienceCtrl'
       });
 
     $urlRouterProvider.otherwise('/');
